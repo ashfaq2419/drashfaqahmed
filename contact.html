@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Dr. Ashfaq Ahmed</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Dr. Ashfaq Ahmed</a></div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research Portfolio</a></li>
+        <li><a href="teaching.html">Teaching Portfolio</a></li>
+        <li><a href="services.html">Services &amp; Activities</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section>
+      <h2 class="section-title">Contact Information</h2>
+      <div class="contact-info">
+        <span><strong>Department:</strong> Dept. of Computer &amp; Information Engineering, Khalifa University</span>
+        <span><strong>Location:</strong> Abu Dhabi, United Arab Emirates</span>
+        <span><strong>Phone:</strong> <a href="tel:+971568812319">+971 56 881 2319</a></span>
+        <span><strong>Email:</strong> <a href="mailto:ashfaq.ahmed@ku.ac.ae">ashfaq.ahmed@ku.ac.ae</a></span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Send a Message</h2>
+      <p>If you would like to get in touch, please use the form below. Your default email client will open when you submit the form.</p>
+      <form action="mailto:ashfaq.ahmed@ku.ac.ae" method="post" enctype="text/plain" class="contact-form">
+        <div style="margin-bottom:1rem;">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" required style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="5" required style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;"></textarea>
+        </div>
+        <button type="submit" class="btn">Send Email</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dr. Ashfaq Ahmed. Last updated: <span id="last-updated"></span></p>
+  </footer>
+</body>
+</html>
