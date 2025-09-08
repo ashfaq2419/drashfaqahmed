@@ -35,28 +35,44 @@
         <span><strong>Location:</strong> Abu Dhabi, United Arab Emirates</span>
         <span><strong>Phone:</strong> <a href="tel:+971568812319">+971 56 881 2319</a></span>
         <span><strong>Email:</strong> <a href="mailto:ashfaq.ahmed@ku.ac.ae">ashfaq.ahmed@ku.ac.ae</a></span>
+        <span><strong>Email:</strong> <a href="mailto:ashfaq2419@gmail.com">ashfaq2419@gmail.com</a></span>
       </div>
     </section>
 
     <section>
       <h2 class="section-title">Send a Message</h2>
-      <p>If you would like to get in touch, please use the form below. Your default email client will open when you submit the form.</p>
-      <form action="mailto:ashfaq.ahmed@ku.ac.ae" method="post" enctype="text/plain" class="contact-form">
+      <p>
+        If you would like to get in touch, please use the form below. 
+        Your message will be delivered directly to my email inbox.
+      </p>
+    
+      <!-- Replace "yourFormID" with the Formspree form ID you get after signup -->
+      <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
         <div style="margin-bottom:1rem;">
           <label for="name">Name</label><br>
-          <input type="text" id="name" name="name" required style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+          <input type="text" id="name" name="name" required
+                 style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
         </div>
+    
         <div style="margin-bottom:1rem;">
           <label for="email">Email</label><br>
-          <input type="email" id="email" name="email" required style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
+          <input type="email" id="email" name="email" required
+                 style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">
         </div>
+    
         <div style="margin-bottom:1rem;">
           <label for="message">Message</label><br>
-          <textarea id="message" name="message" rows="5" required style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;"></textarea>
+          <textarea id="message" name="message" rows="5" required
+                    style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius:4px;"></textarea>
         </div>
-        <button type="submit" class="btn">Send Email</button>
+    
+        <!-- Hidden CC to send to both emails -->
+        <input type="hidden" name="_to" value="ashfaq.ahmed@ku.ac.ae,ashfaq2419@gmail.com">
+    
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </section>
+
   </main>
 
   <!-- Footer -->
